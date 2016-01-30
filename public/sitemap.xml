@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://yoursite.com/blog/2016/01/28/introduction-to-merging/</loc>
-<lastmod>2016-01-28T00:06:21+08:00</lastmod>
+<loc>http://yoursite.com/blog/2016/01/30/working-with-remote-repositories/</loc>
+<lastmod>2016-01-30T01:40:21+08:00</lastmod>
+</url>
+<url>
+<loc>http://yoursite.com/blog/2016/01/30/branches/</loc>
+<lastmod>2016-01-30T00:06:21+08:00</lastmod>
 </url>
 <url>
 <loc>http://yoursite.com/blog/2016/01/28/getting-started-with-git/</loc>
@@ -13,19 +17,15 @@
 <lastmod>2016-01-28T00:06:21+08:00</lastmod>
 </url>
 <url>
-<loc>http://yoursite.com/blog/2016/01/28/branches/</loc>
-<lastmod>2016-01-28T00:06:21+08:00</lastmod>
-</url>
-<url>
 <loc>http://yoursite.com/blog/archives/</loc>
 </url>
 <url>
 <loc>http://yoursite.com/</loc>
 </url>
 <url>
-<loc>http://yoursite.com/blog/categories/git/</loc>
+<loc>http://yoursite.com/blog/categories/heroku/</loc>
 </url>
 <url>
-<loc>http://yoursite.com/blog/categories/heroku/</loc>
+<loc>http://yoursite.com/blog/categories/git/</loc>
 </url>
 </urlset>
