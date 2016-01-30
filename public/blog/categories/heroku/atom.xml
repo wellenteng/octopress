@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Heroku | Because sharing is good!]]></title>
+  <link href="http://yoursite.com/blog/categories/heroku/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2016-01-30T16:07:02+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[Lex Teng]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Deploy on Heroku]]></title>
+    <link href="http://yoursite.com/blog/2016/01/28/deploy-on-heroku/"/>
+    <updated>2016-01-28T00:06:21+08:00</updated>
+    <id>http://yoursite.com/blog/2016/01/28/deploy-on-heroku</id>
+    <content type="html"><![CDATA[<p>Deploy到Heroku基本上會有下面的步驟：</p>
+
+<pre><code>$ heroku login
+$ heroku create happy-octopress
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+</code></pre>
+
+<p>而在使用上面的指令之前，先加入下面的gems:</p>
+
+<pre><code>group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+</code></pre>
+
+<hr />
+
+<p>PostgreSQL錯誤訊息：</p>
+
+<pre><code>An error occurred while installing pg (0.18.4), and Bundler cannot continue.
+Make sure that `gem install pg -v '0.18.4'` succeeds before bundling.
+</code></pre>
+
+<p>需先安裝postgresql:</p>
+
+<pre><code>$ brew uninstall postgresql
+$ brew install postgresql
+$ gem install pg
+</code></pre>
+
+<hr />
+
+<p>在本機端使用postgre遇到錯誤訊息：</p>
+
+<pre><code>psql: could not connect to server: No such file or directory
+Is the server running locally and accepting
+connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+</code></pre>
+
+<p>需啟動postgres(參考 <a href="http://stackoverflow.com/questions/13410686/postgres-could-not-connect-to-server">http://stackoverflow.com/questions/13410686/postgres-could-not-connect-to-server</a>) :</p>
+
+<pre><code>$ pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
